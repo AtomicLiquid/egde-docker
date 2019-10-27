@@ -42,12 +42,14 @@ Det første du må gjøre er å lage en [Dockerfile](Dockerfile) som forteller h
 Deretter må vi bygge docker imaget og pushe det til docker repoet vårt. Dette gjøres slik:
 ```
 $ docker build . -t <docker brukernavn>/<docker repo navn>
-$ docker push <docker brukernavn>/<docker repo navn>```
+$ docker push <docker brukernavn>/<docker repo navn>
+```
 
 NB! Dersom du har ett private repository krever dette at du logger deg inn. Dette kan gjøres vha. `docker login -u <brukernavn> -p <passord>`
 
 For å kjøre applikasjonen er alt vi trenger å gjøre å skrive i en terminal (krever at Docker er installert/tilgjengelig):
 ```
-$ docker run -d <docker brukernavn>/<docker repo navn>``` 
+$ docker run -d <docker brukernavn>/<docker repo navn>
+``` 
 
 Dersom du trenger hjelp er det bare å spørre!
