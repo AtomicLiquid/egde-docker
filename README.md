@@ -32,7 +32,22 @@ Dette gjøres gjennom [Docker Hub](https://hub.docker.com/), og derfor må vi op
 Så, hvor starter du?
 For å slippe å finne opp hjulet på nytt, er det anbefalt og basere seg på eksempelkoden som du kan finne [ovenfor](index.js).
 Klon repositoryet og kjør "npm install". Dette vil installere discord.js biblioteket, som gjør at vi kan kjøre en discord applikasjon.
-Du kan godt prøve å kjøre applikasjonen, legg inn token til din bot og [legg til boten i din discord server](https://discordpy.readthedocs.io/en/latest/discord.html#inviting-your-bot)
-Sjekk at appen kjører ved å skrive !ping.
 
-Dersom du trenger hjelp er det bare å spørre, hvis du trenger en liten kick-start så er det bare å se på eksempler som ligger i dette repoet.
+Du kan godt prøve å kjøre applikasjonen, legg inn token til din bot og [legg til boten i din discord server](https://discordpy.readthedocs.io/en/latest/discord.html#inviting-your-bot). Deretter skriv `node index.js`i en terminal for å starte boten.
+Du kan sjekke om boten kjører ved å skrive !ping i en kanal på din server.
+
+## Docker
+Når applikasjonen din er klar, skal vi "Dockerize" den, slik at vi kan kjøre den hvor som helst gjennom Docker.
+Det første du må gjøre er å lage en [Dockerfile](Dockerfile) som forteller hvor den finner applikasjonen og hvordan den skal kjøre den.
+Deretter må vi bygge docker imaget og pushe det til docker repoet vårt. Dette gjøres slik:
+```
+$ docker build . -t <docker brukernavn>/<docker repo navn>
+$ docker push <docker brukernavn>/<docker repo navn>```
+
+NB! Dersom du har ett private repository krever dette at du logger deg inn. Dette kan gjøres vha. `docker login -u <brukernavn> -p <passord>`
+
+For å kjøre applikasjonen er alt vi trenger å gjøre å skrive i en terminal (krever at Docker er installert/tilgjengelig):
+```
+$ docker run -d <docker brukernavn>/<docker repo navn>``` 
+
+Dersom du trenger hjelp er det bare å spørre!
