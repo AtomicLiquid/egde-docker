@@ -28,4 +28,11 @@ Dette gjøres gjennom [Docker Hub](https://hub.docker.com/), og derfor må vi op
 3. Klikk på "Create repository"
 4. Navngi applikasjonen din og velg om du ønsker at Docker repoet skal være offentlig eller privat.
 
+## Du er nå klar til å begynne!
+Så, hvor starter du?
+For å slippe å finne opp hjulet på nytt, er det anbefalt og basere seg på eksempelkoden som du kan finne [ovenfor](index.js).
+Klon repositoryet og kjør "npm install". Dette vil installere discord.js biblioteket, som gjør at vi kan kjøre en discord applikasjon.
+Du kan godt prøve å kjøre applikasjonen, legg inn token til din bot og [legg til boten i din discord server](https://discordpy.readthedocs.io/en/latest/discord.html#inviting-your-bot)
+Sjekk at appen kjører ved å skrive !ping.
 
+Dersom du trenger hjelp er det bare å spørre, hvis du trenger en liten kick-start så er det bare å se på eksempler som ligger i dette repoet.
