@@ -1,6 +1,6 @@
 ![Egde Logo](https://egdeconsulting.no/wp-content/uploads/2017/01/egde-logo-negativ.png)
 # Egde Docker Workshop
-Velkommen til Egdes Docker Workshop. 
+Velkommen til Egdes Docker Workshop. Dersom du trenger hjelp er det bare å spørre!
 
 ## Først og fremst
 Dette prosjektet baserer seg på at man har:
@@ -52,5 +52,3 @@ For å kjøre applikasjonen er alt vi trenger å gjøre å skrive i en terminal 
 ```
 $ docker run -d <docker brukernavn>/<docker repo navn>
 ``` 
-
-Dersom du trenger hjelp er det bare å spørre!
