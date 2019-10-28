@@ -1,0 +1,24 @@
+{
+  "name": "egde-docker",
+  "version": "1.0.0",
+  "description": "![Egde Logo](https://egdeconsulting.no/wp-content/uploads/2017/01/egde-logo-negativ.png)\r # Egde Docker Workshop\r Velkommen til Egdes Docker Workshop. Dersom du trenger hjelp er det bare å spørre!",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomicLiquid/egde-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtomicLiquid/egde-docker/issues"
+  },
+  "homepage": "https://github.com/AtomicLiquid/egde-docker#readme"
+}
