@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package.json ./
 
-ARG TOKEN="token"
+ARG TOKEN
 ENV TOKEN=$TOKEN
 
 RUN npm install
