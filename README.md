@@ -72,3 +72,4 @@ TOKEN=<token>
 
 Etter du har gjort dette kan du sette `const token = "token"` til å være `const token = process.env.token`.
 
+For å deploye applikasjonen uten at du trenger å legge ved miljøvariabler og andre innstillinger for hver gang den kjøres, kan du lage en docker-compose fil. Eksempel finner du i koden over.
