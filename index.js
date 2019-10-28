@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
-const token = "token-here";
+require('dotenv').config();
+const token = process.env.token;
 const bot = new Discord.Client();
 
 bot.once("ready", () => {

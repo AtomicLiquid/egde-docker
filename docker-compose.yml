@@ -5,6 +5,6 @@ services:
     container_name: discord_bot
     hostname: discord_bot
     image: atomicliquid/egdebot:latest
-    restart: on-stopped
+    restart: always
     environment:
       token: TOKENEXAMPLE
