@@ -61,3 +61,14 @@ Dersom du ønsker å drepe applikasjonen, kan dette gjøres ved:
 $ docker ps // Finn PID til containeren du ønsker å drepe
 $ docker kill <pid>
 ```
+
+## Ferdig?
+Veldig bra jobbet! Det er aldri en god ide og la token til din bot ligge i klartekst i koden, så dette må gjøres noe med. En løsning er å bruke miljøvariabler.
+
+Installer pakken "dotenv" (`npm install dotenv`), lag en fil ved navn .env og legg token inn sånn som dette (dersom du publiserer dette på git, husk å legge inn ".env" i .gitignore, så du ikke publiserer token til git):
+```
+TOKEN=<token>
+```
+
+Etter du har gjort dette kan du sette `const token = "token"` til å være `const token = process.env.token`.
+
