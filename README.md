@@ -4,7 +4,7 @@ Velkommen til Egdes Docker Workshop. Dersom du trenger hjelp er det bare å spø
 
 ## Først og fremst
 Dette prosjektet baserer seg på at man har:
-1. Installert Docker (https://docker.com/)
+1. Installert Docker (https://docker.com/) NB! Dersom du ikke har professional/education versjon av Windows, må du laste ned Docker Toolbox og ikke Docker Desktop
 2. Installert NodeJS (https://nodejs.org/)
 3. Installert Discord (https://discordapp.com/)
 4. Opprettet bruker på https://discordapp.com og https://hub.docker.com/
