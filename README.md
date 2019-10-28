@@ -1,3 +1,4 @@
+![Egde Logo](https://egdeconsulting.no/wp-content/uploads/2017/01/egde-logo-negativ.png)
 # Egde Docker Workshop
 Velkommen til Egdes Docker Workshop. 
 
