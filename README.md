@@ -41,14 +41,23 @@ Du kan sjekke om boten kjører ved å skrive !ping i en kanal på din server.
 Når applikasjonen din er klar, skal vi "Dockerize" den, slik at vi kan kjøre den hvor som helst gjennom Docker.
 Det første du må gjøre er å lage en [Dockerfile](Dockerfile) som forteller hvor den finner applikasjonen og hvordan den skal kjøre den.
 Deretter må vi bygge docker imaget og pushe det til docker repoet vårt. Dette gjøres slik:
-```
+```bash
 $ docker build . -t <docker brukernavn>/<docker repo navn>
 $ docker push <docker brukernavn>/<docker repo navn>
 ```
 
-NB! Dersom du har ett private repository krever dette at du logger deg inn. Dette kan gjøres vha. `docker login -u <brukernavn> -p <passord>`
+NB! Dersom du har ett private repository krever dette at du logger deg inn. Dette kan gjøres vha.:
+```bash
+docker login -u <brukernavn> -p <passord>
+```
 
 For å kjøre applikasjonen er alt vi trenger å gjøre å skrive i en terminal (krever at Docker er installert/tilgjengelig):
-```
+```bash
 $ docker run -d <docker brukernavn>/<docker repo navn>
-``` 
+```
+
+Dersom du ønsker å drepe applikasjonen, kan dette gjøres ved:
+```bash
+$ docker ps // Finn PID til containeren du ønsker å drepe
+$ docker kill <pid>
+```
