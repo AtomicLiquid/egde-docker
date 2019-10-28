@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  bot:
+    container_name: discord_bot
+    hostname: discord_bot
+    image: atomicliquid/egdebot:latest
+    restart: on-stopped
+    environment:
+      token: TOKENEXAMPLE
